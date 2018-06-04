@@ -1,0 +1,15 @@
+{
+  "name": "Reg PWA Lite",
+  "short_name": "RegPWA",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#8888ff",
+  "background_color": "#aaaaff",
+  "icons": [
+    {
+      "src": "bc.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

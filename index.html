@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" charset="utf-8"/>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/reg.css">
+    <title>RegTest</title>
+  </head>
+  <body>
+    <div class="fn-pos">
+      <p class='fn-area-title'>正则表达式</p>
+      <textarea name="name" rows="10" cols="150" class="fn-area" id="reg"></textarea>
+    </div>
+    <div class="fn-pos">
+      <p class='fn-area-title'>文本</p>
+      <pre id="txtPre" class="fn-txtPre"></pre>
+      <textarea name="name" rows="10" cols="150" class="fn-area-txt" id="txt"></textarea>
+    </div>
+    <div class="fn-div">
+      <div>
+        <span class="ui-label">替换匹配</span>
+        <input type="text" name="" value="" class="fn-input" id="input">
+        <button type="button" name="button" id="button">替换</button>
+      </div>
+      <div class="ui-padding">
+          <input type="checkbox" id="checkboxAll" class="ui-checkbox">
+          <label for="checkboxAll" class='ui-label'>全局搜索</label>
+          <input type="checkbox" id="checkboxSize" class="ui-checkbox">
+          <label for="checkboxSize" class='ui-label'>不区分大小写</label>
+      </div>
+    </div>
+    <div class="fn-pos">
+      <p class='fn-area-title'>替换结果</p>
+      <textarea name="name" rows="10" cols="150" class="fn-area" id="result" readonly></textarea>
+    </div>
+    <script type="text/javascript">
+    if (navigator.serviceWorker != null) {
+      navigator.serviceWorker.register('sw.js')
+      .then(function(registration) {
+        console.log('Registered events at scope: ', registration.scope);
+      });
+    }
+    </script>
+    <script src="js/RegTest.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre{
+  margin: 0;
+  padding:0;
+}
+body{
+  background-color: azure;
+}
+
+b{
+  background-color: gold;
+}
+
+i{
+  background-color: dodgerblue;
+  font-style: normal;
+}
+
+.ui-label{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 5px;
+  color: brown;
+}
+
+.ui-padding{
+  padding-left: 70px;
+}
+
+.ui-checkbox{
+  vertical-align: middle;
+}
+
+.fn-area{
+  border-radius: 5px;
+  outline: none;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #71D4F0;
+  padding: 5px;
+  margin-top: 50px;
+  width: 50%;
+  font-weight: bold;
+  -webkit-appearance: none;
+}
+
+.fn-area-txt{
+  border-radius: 5px;
+  outline: none;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #71D4F0;
+  padding: 5px;
+  margin-top: 50px;
+  width: 50%;
+  font-weight: bold;
+  color: transparent;
+  -webkit-appearance: none;
+}
+
+.fn-area-title{
+  position: absolute;
+  top: -45px;
+  left: 25%;
+  font-weight: bold;
+}
+
+.fn-pos{
+  position: relative;
+}
+
+.fn-area:focus,.fn-area-txt:focus{
+  -moz-box-shadow: 0px 0px 8px cornflowerblue;
+  -o-box-shadow: 0px 0px 8px cornflowerblue;
+  -webkit-box-shadow: 0px 0px 8px cornflowerblue;
+}
+
+.fn-div{
+  width: 50%;
+  background-color: #AAADAF;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+.fn-button{
+  background-color: #387DC3;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  color:#fff;
+  border-radius: 3px;
+}
+
+.fn-button:hover{
+  background-color: #285FBA;
+}
+
+.fn-input{
+  width: 50%;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+}
+
+.fn-txtPre{
+  position: absolute;
+  top:7px;
+  left: 25%;
+  width: 50%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+@media only screen and  (max-width: 700px) {
+  .fn-area,.fn-area-txt,.fn-div,.fn-txtPre{
+    width: 85%;
+  }
+  .fn-txtPre{
+    left: 7%;
+  }
+  .fn-area-title{
+    left:10%
+  }
+}
+@media only screen and  (max-width: 350px) {
+  .fn-area,.fn-area-txt,.fn-div,.fn-txtPre{
+    width: 90%;
+  }
+  .fn-txtPre{
+    left: 4%;
+  }
+  .fn-area-title{
+    left:8%
+  }
+}
